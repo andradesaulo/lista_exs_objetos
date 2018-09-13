@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <script src="ex2.js"></script>
+    </head>
+    <body>
+        <h2>Cadastro de habitantes</h2>
+        <p>
+            Rg <input type="number" id="rg">
+        </p>
+        <p>
+            Idade <input type="number" id="idade">
+        </p>
+        <p>
+            Salário <input type="number" id="salario">
+        </p>
+        <p>
+            Número de filhos <input type="number" id="filhos">
+        </p>
+        <p>
+            Sexo (m para masculino e f para feminino) <input type="text" id="sexo">
+        </p>
+        <p>
+            <button onclick="cadastra()">Cadastra</button>
+        </p>
+        <p id="aviso"></p>
+        <hr>
+        <h2>Cálculos</h2>
+        <p>
+            <button onclick="item1()">Item 1</button>
+            <p id="item1">
+
+            </p>
+            <button onclick="item2()">Item 2</button>
+            <p id="item2">
+
+            </p>
+            <button onclick="item3()">Item 3</button>
+            <p id="item3">
+
+            </p>
+            <button onclick="item4()">Item 4</button>
+            <p id="item4">
+
+            </p>
+        </p>
+        <h2>Busca</h2>
+        <p>
+            <input type="number" id="idadeProcurado">
+            <input type="number" id="filhosProcurado">
+            <input type="text" id="sexoProcurado">
+            <input type="number" id="salarioProcurado">
+            <input type="number" id="rgProcurado">
+            <button onclick="busca()">B</button>
+        </p>
+    </body>
+</html>
