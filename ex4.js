@@ -1,3 +1,4 @@
+//Melhorar o design?
 var habitantes = [];
 //Função de cadastro de habitantes
 function cadastraHab(){
@@ -8,6 +9,8 @@ function cadastraHab(){
     habitante.nFilhos = parseInt(document.getElementById("nFilhos").value);
     habitante.rendFam = parseFloat(document.getElementById("rendFam").value);
     habitantes.push(habitante);
+    document.getElementById("cadastrado").innerHTML = "Habitante de rg " + 
+        habitante.rg + " cadastrado com sucesso!"
 }
 //Função para calcular a média salarial dos habitantes
 function mediaSalHab(){
@@ -17,7 +20,7 @@ function mediaSalHab(){
         soma += habitantes[i].rendFam
     }
     mediaSal = soma/habitantes.length
-    document.getElementById("mediaSalHab").innerHTML = medialSal;
+    document.getElementById("mediaSalHab").innerHTML = "R$" + mediaSal;
 }
 //Função para calcular a maior e a menor idade habitacional
 function menorMaiorIdade(){
@@ -31,8 +34,10 @@ function menorMaiorIdade(){
             maiorIdade = habitantes[i].idade;
         }
     }
-    document.getElementById("maiorIdade").innerHTML = maiorIdade;
-    document.getElementById("menorIdade").innerHTML =  menorIdade;
+    document.getElementById("maiorIdade").innerHTML = "Maior idade: " + 
+        maiorIdade + " anos";
+    document.getElementById("menorIdade").innerHTML = "Menor idade: " +
+        menorIdade + " anos";
 }
 //Função para calcular a quantidade de mulheres com mais de 2 filhos e com renda
 //familiar inferior a R$600,00
@@ -45,5 +50,6 @@ function quantMulheres(){
            quantMulheres++ 
         }
     }
-    document.getElementById("quantMulheres").innerHTML = quantMulheres;
+    document.getElementById("quantMulheres").innerHTML = quantMulheres +
+        " mulheres.";
 }
