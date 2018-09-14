@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="ex4.js"></script>
+    </head>
+    <body>
+        <div id="cadastroHab">
+            <h1>Cadastro de habitantes</h1>
+            <p>RG<input type="number" id="rg"></p>
+            <p>Sexo</p>
+            <select id="sexo">
+                <option value="F">Feminino</option>
+                <option value="M">Masculino</option>
+            </select>
+            <p>Idade<input type="number" id="idade"></p>
+            <p>Número de filhos<input type="number" id="nFilhos"></p>
+            <p>Renda familiar<input type="number" id="rendFam"></p>
+            <button onclick="cadastra()">cadastrar</button>
+        </div>
+        <hr>
+        <div id="calculos">
+            <p>Média salarial dos habitantes</p>
+            <button onclick="mediaSalHab()">calcular</button>
+            <p id="mediaSalHab"></p>
+            <p>Maior e menor idade habitacional</p>
+            <button onclick="menorMaiorIdade()">calcular</button>
+            <p id="maiorIdade"></p>
+            <p id="menorIdade"></p>
+            <p>Quantidade de mulheres com mais de dois filhos e com renda familiar menor que 600</p>
+            <button onclick="quantMulheres()">calcular</button>
+            <p id="quantMulheres"></p>
+        </div>
+    </body>
+</html>
