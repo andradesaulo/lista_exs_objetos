@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="ex20.js"></script>
+    </head>
+    <body>
+        <h2> Oficina mecânica </h2>
+        <p>
+            Cliente <input type="text" id="cliente">
+        </p>
+        <P>
+            Serviço realizado <input type="text" id="sr">
+        </P>
+        <p>
+            Data <input type="date" id="data">
+        </p>
+        <p>
+            Valor <input type="text" id="valor">
+        </p>
+        <p>
+            Número da OS (Ordem de serviço) <input type="number" id="os">
+        </p>
+        <p>
+            <button onclick="cadastra()"> Cadastrar </button>
+        </p>
+        <p id="aviso"></p>
+        <hr/>
+        <p>
+            <button onclick="consultar()"> Consultar </button>
+            <p id="consulta">
+            </p>
+        </p>
+    </body>
+</html>
