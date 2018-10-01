@@ -12,7 +12,7 @@ function calcula(){
     var i;
     var sm = 0;
     for(i=0;i<vet.length;i++){
-        sm = Number(vet[i].salario) + Number(vet[i].tdv) + (tdv*(0.06));
+        sm = Number(vet[i].salario) + Number(vet[i].tdv) + (Number(vet[i].tdv*(0.06)));
 
     }
 
