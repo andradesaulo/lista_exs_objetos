@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="ex8.js"></script>
+    </head>
+    <body>
+        <section>
+            <h1>Inserindo dados</h1>
+            <p>
+                Estado:
+                <select id="estado">
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                </select>
+            </p>
+            <p>
+                Número de veículos em 2012:
+                <input type="number" id="numVeiculos">
+            </p>
+            <p>
+                Número de acidentes em 2012:
+                <input type="number" id="numAcidentes">
+            </p>
+            <p>
+                <button onclick="insereDados()">Inserir</button>
+            </p>
+            <p id="msgDados"></p>
+        </section>
+        <section>
+            <h1>Maior e menor índices de acidentes</h1>
+            <p>
+                <button onclick="maiorMenorIndAcid()">Calcular</button>
+            </p>
+            <p id="msgMaiorMenor"></p>
+        </section>
+        <section>
+            <h1>Percentuais de veículos em cada estado</h1>
+            <p>
+                <button onclick="calcPercent()">Calcular</button>
+            </p>
+            <p id="msgPercentVeic"></p>
+        </section>
+        <section>
+            <h1>Média de acidentes</h1>
+            <p>
+                <button onclick="mediaAcid()">Calcular</button>
+            </p>
+            <p id="msgMediaAcid"></p>
+        </section>
+    </body>
+</html>

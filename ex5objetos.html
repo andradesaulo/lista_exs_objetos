@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="exe5objetos.js"></script>
+    </head>
+    <body> <!-- comentário -->
+        <section id="cadastro">
+            <h1> Área de cadastro </h1>
+            <p>Código</p>
+            <input type="number" id="codigo">
+            <p>Descrição</p>
+            <input type="text" id="descricao">
+            <p>Valor</p>
+            <input type="number" id="valor">
+            <p>Quantidade</p>
+            <input type="number" id="qtde">
+            <p>
+                <button onclick="insere()">Cadastrar</button>
+            </p>
+            <p id="aviso"></p> 
+        </section>
+        <section id="altera">
+            <p>Código do produto:</p>
+            <input type="number" id="codAltera">
+            <p>Descrição</p>
+            <input type="text" id="descrAltera">
+            <p>Valor</p>
+            <input type="number" id="valorAltera">
+            <p>Quantidade</p>
+            <input type="number" id="qtdeAltera">
+            <p><button onclick="altera()">Alterar</button>
+            <p id="msgAltera"></p>
+        </section>
+        <section id="procuraLetra">
+            <h1>Procure a letra</h1>
+            <p>Procure a descrição de um produto pela 1ª letra</p>
+            <input type="text" id="letra">
+            <p><button onclick="mostraLetra()">Mostrar</button>
+            <p id="mostraLetra"></p>
+        </section>
+        <section id="estoqueMenor5">
+            <h1>Produtos com estoque menor que 5</h1>
+            <button onclick="estoque()">Procurar</button>
+            <p id="msgEstoque"></p>
+        </section>
+    </body>
+</html>

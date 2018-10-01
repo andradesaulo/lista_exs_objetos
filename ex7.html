@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="ex7.js"></script> 
+    </head>
+    <body>
+        <section>
+            <h1>Cadastro de clientes</h1>
+            <p>
+                Código do cliente:
+                <input type="number" id="codClienteCadastro">
+            </p>
+            <p>
+                Nome do cliente:
+                <input type="text" id="nomeCliente">
+            </p>
+            <p>
+                <button onclick="cadastraCliente()">Cadastrar</button>
+            </p>
+            <p id="msgCadastroCliente"></p>
+        </section>
+        <section>
+            <h1>Cadastro de contas</h1>
+            <p>
+                Código do cliente:
+                <input type="number" id="codClienteConta">
+            </p>
+            <p>
+                Número da conta:
+                <input type="number" id="numConta">
+            </p>
+            <p>
+                Valor da compra:
+                <input type="number" id="valCompra">
+            </p>
+            <p>
+                <button onclick="cadastraConta()">Cadastrar</button>
+            </p>
+            <p id="msgCadastroConta"></p>
+        </section>
+        <section>
+            <h1>Remoção de clientes</h1>
+            <p>
+                Código do cliente:
+                <input type="number" id="codClienteRemocao">
+            </p>
+            <p>
+                <button onclick="removeCliente()">Remover</button>
+            </p>
+            <p id="msgRemocaoCliente"></p>
+        </section>
+    </body>
+</html>

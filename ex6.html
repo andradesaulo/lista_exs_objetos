@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="ex6.js"></script>
+        <style>
+        #cadastroClientes{
+            border: 2px solid black;
+            width: 350px;
+            padding: 10px 0px 10px 20px;
+        }
+        .vis {
+            display: block;
+        }
+        .inv {
+            display:none;
+        }
+        </style>
+    </head>
+    <body>
+        <section id="cadastroContas">
+            <h1>Cadastro de contas</h1>
+            <p>
+                Número da conta
+                <input type="number" id="numConta">
+            </p>
+            <p>
+                Número do cliente
+                <input type="number" id="numClienteConta">
+            </p>
+            <p>
+                Saldo da conta
+                <input type="number" id="saldoConta">
+            </p>
+            <p>
+                <button onclick="cadastraConta()">Cadastrar</button>
+            </p>
+            <p id="msgCadrConta"></p>
+            <p>
+                <button onclick="mostraContas()">Mostrar contas cadastradas</button>
+            </p>
+            <p id="todasContas"></p>
+        </section>
+        <section id="cadastroClientes" class="inv">
+            <h1>Cadastro de clientes</h1>
+            <p>
+                Número do cliente
+                <input type="number" id="numCliente">
+            </p>
+            <p>
+                Nome do cliente
+                <input type="text" id="nomeCliente">
+            </p>
+            <p>
+                Telefone do cliente
+                <input type="text" id="telCliente">
+            </p>
+            <p>
+                Endereço do cliente
+                <input type="text" id="endCliente">
+            </p>   
+            <p>
+                <button onclick="cadastraCliente()">Cadastrar</button>
+            </p> 
+            <p id="msgCadrCliente"></p>
+            <p id="fechaCadastro" class="inv">
+                <button onclick="fechaCadastro()">Fechar janela</button>
+            </p>
+        </section>
+    </body>
+</html>
